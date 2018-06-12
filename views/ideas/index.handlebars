@@ -1,0 +1,33 @@
+<div class="landing-section">
+<a href="./ideas/add" class="fab w-inline-block"><img src="/images/plus-symbol.png"/></a>
+</div>
+{{#each ideas}}
+
+    <div class="landing-cont w-container">
+        <div class="post-cont">
+            <div class="title-holder">
+                <h1 class="heading">{{title}}</h1>
+            </div>
+            <div class="content-container">
+                <h1 class="heading-2">{{details}}</h1>
+            </div>
+            <div class="btn-holders">
+                <a href="/ideas/edit/{{id}}" class="btn w-button butt">edit</a>
+                <form method="post" action="/ideas/{{id}}?_method=DELETE" class="btn del w-button butt">
+                    <input type="hidden" name="_method" value="DELETE"> {{!--
+                    <a href="#" class="btn del w-button">Delete</a> --}}
+                    <input type="submit" value="Delete" class="btn2">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+{{else}} 
+<div class="landing-section">
+    <div class="landing-cont w-container">
+        <p>You've got no ideas saved  yet </p>
+        <a href="./ideas/add" class="signup-btn w-button ">Add Idea</a>
+    </div>
+</div> 
+{{/each}}

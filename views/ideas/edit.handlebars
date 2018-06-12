@@ -1,0 +1,21 @@
+<div class="landing-section">
+    <div class="landing-cont w-container">
+        {{#each errors}}
+        <div class="alert alert-danger">{{text}}</div>
+        {{else}} {{/each}}
+
+        <h1 class="heading">Edit Idea</h1>
+        <div class="form-block w-form">
+            <form method="post" action="/ideas/{{idea.id}}?_method=PUT" class="form">
+                <input type="hidden" name="_method" value="PUT">
+                <label class="form-text">Title</label>
+                <input type="text" class="signup-input w-input" value="{{idea.title}}" maxlength="256" name="title" required />
+                <label class="form-text">content</label>
+                <textarea class="signup-input w-input" name="details" cols="30" rows="10" required>{{idea.details}}</textarea>
+                <div class="btn-centered">
+                    <input type="submit" value="Post" class="signup-btn w-button" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

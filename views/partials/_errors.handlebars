@@ -1,0 +1,17 @@
+{{#if error}}
+<div class="landing-section">
+    <div class="landing-cont w-container">
+<div class="alert alert-success">{{error}}</div>
+</div>
+</div>
+{{/if}}
+
+ {{#each errors}}
+        <div class="landing-section">
+    <div class="landing-cont w-container">
+<div class="alert alert-danger">{{text}}</div>
+</div>
+</div>
+        {{else}} 
+        
+        {{/each}}

@@ -1,0 +1,24 @@
+<div class="landing-section">
+    <div class="landing-cont w-container">
+        <h1 class="heading">Sign Up</h1>
+        <div class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" class="form" method="post" action="/users/register">
+                <label class="form-text">Name</label>
+                <input type="text" class="signup-input w-input" maxlength="256" name="name" data-name="Field" id="field" required=""  value="{{name}}" />
+                <label class="form-text">Email</label>
+                <input type="text" class="signup-input w-input" maxlength="256" name="email" data-name="Field 2" id="field-2" required=""  value="{{email}}"
+                />
+                <label class="form-text">password</label>
+                <input type="password" class="signup-input w-input" maxlength="256" name="password" data-name="Field 3" id="field-3" required="" value="{{password}}"
+                />
+                <label class="form-text">Confirm password</label>
+                <input type="password" class="signup-input w-input" maxlength="256" name="password2" data-name="Field 4" id="field-4" required=""  value="{{password2}}"
+                />
+                <div class="btn-centered">
+                    <input type="submit" value="Sign Up" data-wait="Please wait..." class="signup-btn w-button" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
