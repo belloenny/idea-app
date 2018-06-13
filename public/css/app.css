@@ -122,7 +122,10 @@ section {
     -ms-user-select: none;
     user-select: none;
 }
-
+.w-nav-button img{
+    width: 33px;
+    height: 22px;;
+}
 .w-nav-button h1 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -354,6 +357,8 @@ section {
 }
 
 .fab img {
+    width: 32px;
+    height: 32px;
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;

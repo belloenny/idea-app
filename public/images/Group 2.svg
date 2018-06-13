@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.933 95.706">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="matrix(0.454, 0.891, -0.891, 0.454, 41.592, -70.981)">
+    <g id="light-bulb" transform="translate(71.076 28.138) rotate(-17)">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_1" data-name="Path 1" class="cls-1" d="M45.237,65.421h0l-28.751-.008a1.382,1.382,0,0,1-1.372-1.218c-.334-2.822-1.32-6.806-4.139-9.736a.049.049,0,0,0-.011-.014,30.863,30.863,0,1,1,39.668.113c-2.706,2.833-3.692,6.82-4.026,9.644A1.373,1.373,0,0,1,45.237,65.421ZM17.685,62.651l26.354.008a19.025,19.025,0,0,1,4.716-10.117,28.112,28.112,0,1,0-35.888-.108,1.367,1.367,0,0,1,.221.235A19.092,19.092,0,0,1,17.685,62.651Z"/>
+        <path id="Path_2" data-name="Path 2" class="cls-1" d="M30.131,2.761H1.381A1.381,1.381,0,0,1,1.381,0H30.131a1.381,1.381,0,1,1,0,2.761Z" transform="translate(15.106 71.009)"/>
+        <path id="Path_3" data-name="Path 3" class="cls-1" d="M30.131,2.761H1.381A1.381,1.381,0,0,1,1.381,0H30.131a1.381,1.381,0,0,1,0,2.761Z" transform="translate(15.106 79.364)"/>
+        <path id="Path_4" data-name="Path 4" class="cls-1" d="M13.419,2.761H1.381A1.381,1.381,0,1,1,1.381,0H13.419a1.381,1.381,0,1,1,0,2.761Z" transform="translate(23.464 87.722)"/>
+      </g>
+    </g>
+    <line id="Line_1" data-name="Line 1" class="cls-2" x2="14" y2="3.818" transform="translate(64.5 30.501)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-2" x2="5.091" y2="14" transform="translate(92.501 2.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-2" x1="6.364" y2="8.909" transform="translate(128.138 11.409)"/>
+    <line id="Line_5" data-name="Line 5" class="cls-2" x1="8.909" y2="2.546" transform="translate(140.866 31.774)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-2" y1="1.273" x2="8.909" transform="translate(67.046 55.956)"/>
+  </g>
+</svg>
