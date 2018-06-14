@@ -72,7 +72,7 @@ html {
     top: 100%;
     left: 0;
     right: 0;
-    background: #B57CFE;
+    background: white;
     float: left;
     overflow: visible;
     width: 100%;
@@ -140,7 +140,7 @@ section {
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
-    color: #222222;
+    color: #9948ff;
     padding: 20px;
     text-align: left;
     margin-left: auto;
@@ -149,7 +149,7 @@ section {
 
 .w-nav {
     position: relative;
-    background: #dddddd;
+    background: white;
     z-index: 1000;
 }
 
@@ -188,11 +188,12 @@ section {
 }
 
 .w-nav-menu a {
-    color: white;
+    color: #9948ff;
     text-decoration: none;
 }
 
 .nav-link {
+    color: #9948ff;
     margin-top: 5px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -202,8 +203,7 @@ section {
     left: 0px;
     top: 0px;
     right: 0px;
-    background-image: -webkit-linear-gradient(270deg, #9948ff, #9948ff);
-    background-image: linear-gradient(180deg, #9948ff, #9948ff);
+    color: white;
     box-shadow: 1px 1px 28px -2px rgba(0, 0, 0, .52);
 }
 
@@ -360,8 +360,8 @@ section {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 100px;
-    background-image: -webkit-linear-gradient(270deg, #48bbff, #48bbff);
-    background-image: linear-gradient(180deg, #48bbff, #48bbff);
+    background-image: -webkit-linear-gradient(270deg, #9948ff, #9948ff);
+    background-image: linear-gradient(180deg, #9948ff, #9948ff);
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .23);
 }
 
@@ -493,8 +493,8 @@ section {
 
 .btn {
     width: 50%;
-    background-image: -webkit-linear-gradient(270deg, #48bbff, #48bbff);
-    background-image: linear-gradient(180deg, #48bbff, #48bbff);
+    background-image: -webkit-linear-gradient(270deg, #9948FF, #9948FF);
+    background-image: linear-gradient(180deg, #9948FF, #9948FF);
     -webkit-transition: all 1500ms ease;
     transition: all 1500ms ease;
     text-align: center;
@@ -519,8 +519,8 @@ section {
 }
 
 .btn.del {
-    background-image: -webkit-linear-gradient(270deg, #41475a, #41475a), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-    background-image: linear-gradient(180deg, #41475a, #41475a), linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    background-image: -webkit-linear-gradient(270deg, #41475A, #41475A), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    background-image: linear-gradient(180deg, #41475A, #41475A), linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
 }
 
 .btn.del:hover {
