@@ -17,18 +17,18 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 //login form post
-router.post('/signin', (req,res,next)=>{
-    passport.authenticate('local',{
-        successRedirect:'/ideas',
-        failureRedirect:'signin',
+router.post('/signin', (req, res, next) => {
+    passport.authenticate('local', {
+        successRedirect: '/ideas',
+        failureRedirect: 'signin',
         failureFlash: true
-        
-    })(req,res,next);
+
+    })(req, res, next);
 });
 //register a user
-router.post('/register', (req, res,) => {
+router.post('/register', (req, res, ) => {
     let errors = [];
-    let success =[];
+    let success = [];
     if (req.body.password != req.body.password2) {
         errors.push({
             text: 'Passwords do not match'
@@ -65,7 +65,7 @@ router.post('/register', (req, res,) => {
                             newUser.password = hash;
                             newUser.save()
                                 .then(user => {
-                                    req.flash('success_msg','You can now sign in');
+                                    req.flash('success_msg', 'You can now sign in');
                                     res.redirect('signin')
                                 })
                                 .catch(err => {
@@ -81,9 +81,9 @@ router.post('/register', (req, res,) => {
 });
 
 //signout user
-router.get('/signout',(req,res)=>{
+router.get('/signout', (req, res) => {
     req.logout();
-    req.flash('success_msg','you have signed out');
+    req.flash('success_msg', 'you have signed out');
     res.redirect('/users/signin');
 });
 

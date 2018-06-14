@@ -45,7 +45,7 @@ app.use(methodOverride('_method'));
 
 //express session middleware
 app.use(session({
-    secret:'secret',
+    secret: 'secret',
     resave: true,
     saveUninitialized: true,
 }));
@@ -58,16 +58,16 @@ app.use(flash());
 
 //global variables 
 
-app.use(function(req,res,next){
-    res.locals.success_msg=req.flash('success_msg');
-    res.locals.error_msg=req.flash('error_msg');
+app.use(function (req, res, next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
     res.locals.error = req.flash('error');
     res.locals.user = req.user || null;
     next();
 });
 
 //static folder assets
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 //index route
@@ -85,9 +85,9 @@ app.get('/about', (req, res) => {
 
 //use routes
 app.use('/ideas', ideas);
-app.use('/users',users);
+app.use('/users', users);
 
-const port = process.env.PORT ||5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`server started on port ${port}`);
 });

@@ -122,10 +122,13 @@ section {
     -ms-user-select: none;
     user-select: none;
 }
-.w-nav-button img{
+
+.w-nav-button img {
     width: 33px;
-    height: 22px;;
+    height: 22px;
+    ;
 }
+
 .w-nav-button h1 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -177,7 +180,11 @@ section {
 }
 
 .brand {
-    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.nav-image{
+    width: 40px;
+    height: auto;
 }
 
 .w-nav-menu a {
@@ -191,6 +198,10 @@ section {
 }
 
 .navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
     background-image: -webkit-linear-gradient(270deg, #9948ff, #9948ff);
     background-image: linear-gradient(180deg, #9948ff, #9948ff);
     box-shadow: 1px 1px 28px -2px rgba(0, 0, 0, .52);
@@ -216,7 +227,7 @@ section {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 30px;
+    margin-top: 80px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -459,9 +470,11 @@ section {
     background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5));
     box-shadow: 7px 0 30px 0 rgba(0, 0, 0, .1);
 }
-.post-cont a{
+
+.post-cont a {
     color: white;
 }
+
 .btn-holders {
     position: static;
     left: 0px;
@@ -620,7 +633,15 @@ section {
         margin-top: 5px;
         font-family: 'Open Sans', sans-serif;
     }
+    .fab img{
+        width: 25px;
+        height: 25px;
+    }
     .fab {
+        padding-top: 13px;
+        padding-left: 13px;
+        width: 50px;
+        height: 50px;
         right: 25px;
         bottom: 25px;
     }
