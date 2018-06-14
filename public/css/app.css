@@ -360,8 +360,8 @@ section {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 100px;
-    background-image: -webkit-linear-gradient(270deg, #9948ff, #9948ff);
-    background-image: linear-gradient(180deg, #9948ff, #9948ff);
+    background-image: -webkit-linear-gradient(270deg, #9948FF, #9948FF);
+    background-image: linear-gradient(180deg, #9948FF, #9948FF);
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .23);
 }
 
@@ -493,8 +493,8 @@ section {
 
 .btn {
     width: 50%;
-    background-image: -webkit-linear-gradient(270deg, #9948FF, #9948FF);
-    background-image: linear-gradient(180deg, #9948FF, #9948FF);
+    background-image: -webkit-linear-gradient(270deg, #48BBFF, #48BBFF);
+    background-image: linear-gradient(180deg, #48BBFF, #48BBFF);
     -webkit-transition: all 1500ms ease;
     transition: all 1500ms ease;
     text-align: center;
