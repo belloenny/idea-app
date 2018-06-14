@@ -201,16 +201,14 @@ section {
     text-align: center;
 }
 
-.alert h1 {
-    color: white;
-}
-
 .alert-success {
     color: green;
+    font-size: 30px;
 }
 
 .alert-danger {
     color: red;
+    font-size: 30px;
 }
 
 .landing-cont {

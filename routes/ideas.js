@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const { ensureAuthenticated} = require('../helpers/auth');
+const {
+    ensureAuthenticated
+} = require('../helpers/auth');
 
 //load ideas model
 require('../models/Ideas');
@@ -9,8 +11,10 @@ const idea = mongoose.model('ideas');
 
 
 //ideas index page
-router.get('/',ensureAuthenticated,(req, res) => {
-    idea.find({user: req.user.id})
+router.get('/', ensureAuthenticated, (req, res) => {
+    idea.find({
+            user: req.user.id
+        })
         .sort({
             date: 'desc'
         })
@@ -27,7 +31,7 @@ router.get('/users/signin', (req, res) => {
 });
 
 //idea route
-router.get('/edit/:id', ensureAuthenticated,(req, res) => {
+router.get('/edit/:id', ensureAuthenticated, (req, res) => {
     idea.findOne({
             _id: req.params.id
         })
@@ -40,13 +44,13 @@ router.get('/edit/:id', ensureAuthenticated,(req, res) => {
 
 
 //Edit route
-router.get('/add',ensureAuthenticated,(req, res) => {
+router.get('/add', ensureAuthenticated, (req, res) => {
     res.render('ideas/add');
 });
 
 
 //Process form
-router.post('/',ensureAuthenticated, (req, res) => {
+router.post('/', ensureAuthenticated, (req, res) => {
     let errors = [];
     if (!req.body.title) {
         errors.push({
@@ -73,6 +77,7 @@ router.post('/',ensureAuthenticated, (req, res) => {
         new idea(newUser)
             .save()
             .then(idea => {
+               req.flash('success_msg','Idea added');
                 res.redirect('/ideas');
             });
     }
@@ -80,7 +85,7 @@ router.post('/',ensureAuthenticated, (req, res) => {
 
 
 //Edit form process
-router.put('/:id', ensureAuthenticated,(req, res) => {
+router.put('/:id', ensureAuthenticated, (req, res) => {
     idea.findOne({
             _id: req.params.id
         })
@@ -90,7 +95,7 @@ router.put('/:id', ensureAuthenticated,(req, res) => {
             idea.details = req.body.details;
             idea.save()
                 .then(idea => {
-                    req.flash('success_msg','successfully edited');
+                    req.flash('success_msg', 'successfully edited');
                     res.redirect('/ideas');
                 });
         });

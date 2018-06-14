@@ -3,7 +3,6 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-
 //load user model
 require('../models/Users');
 const User = mongoose.model('users');
@@ -66,9 +65,7 @@ router.post('/register', (req, res,) => {
                             newUser.password = hash;
                             newUser.save()
                                 .then(user => {
-                                    success.push({
-                                        text: 'user saved'
-                                    })
+                                    req.flash('success_msg','You can now sign in');
                                     res.redirect('signin')
                                 })
                                 .catch(err => {
